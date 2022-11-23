@@ -1,116 +1,144 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Café</title>
-    <link rel="icon" href="assets/cafe-icon.png">
+    <link rel="icon" href="assets/coffee-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
+    <div id="hero">
         <nav>
             <!-- logo -->
-            <img src="assets/cafe-icon.png" alt="logo café">
+            <div class="icone">
+                <img src="assets/coffee-icon.png" alt="logo café">
+            </div>
 
-            <a href="">Benefícios</a>
-            <a href="">Por que café?</a>
-            <a href="">Relatos dos amantes</a>
+            <ul>
+                <li><a href="">Benefícios</a></li>
+                <li><a href="">Por que café?</a></li>
+                <li><a href="">Relatos dos amantes</a></li>
+            </ul>
 
             <!-- botão -->
-            <a href="">Juntar-se</a>
+            <a href="" class="botao">Juntar-se</a>
         </nav>
-        
-        <!-- título -->
-        <h1>DORMIR É UM FRACO SUBSTITUTO PARA O CAFÉ ;)</h1>
-        <p>Afinal, sempre tem trabalho pra entregar no outro dia :D</p>
 
-        <!-- call-to-action -->
-        <p>Mais de 1 bilhãod e pessoas consomem esse líquido divino diariamente</p>
-        <a href="">Junte-se a nós</a>
-    </header>
-
-    <main>
-        <div id="beneficios">
-    
-            <h2>Benefícios</h2>
-            <p>Se bem que tomar café já é um benefício em si...</p>
-    
-            <div id="beneficios-cards">
-                <!-- não sei se uso span ou se uso div -->
-                <div>
-                    <h3>Queima calorias!</h3>
-                    <img src="assets/fire.png" alt="fogo">
-                    <p>Acelera o metanolismo e ajuda a emagrecer.</p>
-                </div>
-    
-                <div>
-                    <h3>Aumenta a vida!</h3>
-                    <img src="assets/smile.png" alt="sorriso">
-                    <p>Risco menor de morte por doenças.</p>
-                </div>
-    
-                <div>
-                    <h3>Memória forte!</h3>
-                    <img src="assets/brain.png" alt="cerebro">
-                    <p>Cafeína tem efeito positivo na memória.</p>
-                </div>
-            </div>
-    
-        </div>
-    
-        <div id="porque-cafe">
-    
-            <h2>Por que café?</h2>
-            <p>Tirando os motivos óbvios: o sabor, o aroma, a textura...</p>
-    
-            <div id="porque-cards">
-                <div>
-                    <div>1</div>
-                    <h3>Cafeína é legal</h3>
-                    <ul>
-                        <li>Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a cafeína contribui significativamente.</li>
-                    </ul>
-                </div>
-    
-                <div>
-                    <div>2</div>
-                    <h3>Cultura</h3>
-                    <ul>
-                        <li>Em empresas, é comum ter cafeteriras e xícaras pesonalizadas, com sua linguagem de programação favorita.</li>
-                        <li>Até Java (linguagem) foi nomeada graças a um café!</li>
-                    </ul>
-                </div>
-    
-                <div>
-                    <div>3</div>
-                    <h3><em>"Uma representação da relidade"</em></h3>
-                    <img src="assets/tirinha.png" alt="">
-                </div>
+        <div id="hero-conteudo">
+            <div>
+                <!-- título -->
+                <h1>DORMIR É UM FRACO SUBSTITUTO PARA O CAFÉ ;)</h1>
+                <p>Afinal, sempre tem trabalho pra entregar no outro dia :D</p>
             </div>
 
+            <div>
+                <!-- call-to-action -->
+                <p>Mais de 1 bilhão de pessoas consomem esse líquido divino diariamente</p>
+                <a href="" class="botao">Junte-se a nós</a>
+            </div>
         </div>
 
-        <div id="relatos">
-            <!-- slide em javascript -->
+    </div>
+
+    <section id="beneficios">
+        <h2>Benefícios</h2>
+        <p>Se bem que tomar café já é um benefício em si...</p>
+
+        <div id="beneficios-cards">
+            <!-- não sei se uso span ou se uso div -->
+            <div>
+                <h3>Queima calorias!</h3>
+                <img src="assets/fire.svg" alt="fogo">
+                <p>Acelera o metanolismo e ajuda a emagrecer.</p>
+            </div>
+
+            <div>
+                <h3>Aumenta a vida!</h3>
+                <img src="assets/smile.svg" alt="sorriso">
+                <p>Risco menor de morte por doenças.</p>
+            </div>
+
+            <div>
+                <h3>Memória forte!</h3>
+                <img src="assets/brain.svg" alt="cerebro">
+                <p>Cafeína tem efeito positivo na memória.</p>
+            </div>
         </div>
 
-        <div id="duvidas">
-            <h2>Ainda tem dúvidas?</h2>
-            <a href="">Contate-nos</a>
+    </section>
+
+    <section id="porque-cafe">
+        <h2>Por que café?</h2>
+        <p>Tirando os motivos óbvios: o sabor, o aroma, a textura...</p>
+
+        <div id="porque-cards">
+            <div>
+                <div>1</div>
+                <h3>Cafeína é legal</h3>
+                <ul>
+                    <li>Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a
+                        cafeína contribui significativamente.</li>
+                </ul>
+            </div>
+
+            <div>
+                <div>2</div>
+                <h3>Cultura</h3>
+                <ul>
+                    <li>Em empresas, é comum ter cafeteriras e xícaras pesonalizadas, com sua linguagem de
+                        programação favorita.</li>
+                    <li>Até Java (linguagem) foi nomeada graças a um café!</li>
+                </ul>
+            </div>
+
+            <div>
+                <div>3</div>
+                <h3><em>"Uma representação da relidade"</em></h3>
+                <img src="assets/tirinha.png" alt="">
+            </div>
         </div>
-    </main>
+
+    </section>
+
+    <section id="relatos">
+        <h2>Relatos dos amantes</h2>
+        <p><em>"Eu acredito na supremacia do café!"</em></p>
+        <!-- slide em javascript -->
+    </section>
+
+    <section id="duvidas">
+        <h2>Ainda tem dúvidas?</h2>
+        <a href="" class="botao">Contate-nos</a>
+    </section>
+
 
     <footer>
         <div>
-            <img src="" alt="instagram">
-            <img src="" alt="facebook">
-            <img src="" alt="twitter">
+            <div class="icone">
+                <img src="assets/instagram.svg" alt="instagram">
+            </div>
+            <div class="icone">
+                <img src="assets/facebook.svg" alt="facebook">
+            </div>
+            <div class="icone">
+                <img src="assets/twitter.svg" alt="twitter">
+            </div>
         </div>
+        <p>Desenvolvido por Beets Jr.</p>
     </footer>
-    
+
 </body>
+
 </html>
