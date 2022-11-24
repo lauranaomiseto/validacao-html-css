@@ -62,14 +62,13 @@ h3 {
     align-items: center;
 }
 
+.icone:hover {
+    background-color: #eeba6a;
+}
+
 .icone img {
     height: 30px;
     width: auto;
-}
-
-#hero {
-    height: 100vh;
-    backdrop-filter: blur(3px) grayscale(40%);
 }
 
 #background-img-hero {
@@ -77,6 +76,11 @@ h3 {
     background-image: url(assets/cup-coffee-background.png);
     background-position: center;
     background-size: cover;
+}
+
+#hero {
+    height: 100vh;
+    backdrop-filter: blur(3px) grayscale(40%);
 }
 
 #hero nav {
@@ -222,7 +226,38 @@ section {
 }
 
 #duvidas h2 {
+    text-align: center;
     color: #efa331;
     font-size: 2rem;
     margin-bottom: 30px;
+}
+
+#background-img-footer {
+    height: 400px;
+    background-image: url(assets/laptop-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    height: 100%;
+    backdrop-filter: blur(3px) grayscale(40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > div {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    color: #3e1705;
+    font-weight: 600;
+    background-color: #efa331;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
