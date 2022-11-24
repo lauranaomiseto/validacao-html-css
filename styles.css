@@ -56,7 +56,7 @@ h3 {
     width: 50px;
     height: 50px;
     background-color: #efa331;
-    border-radius: 100px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,6 +218,82 @@ section {
 }
 
 /* RELATO DOS AMANTES ---------------------------------- */
+
+#relatos-slides {
+    /* width: 70%; */
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.relato-slide {
+    /* o display none retira o elemento do layout da página, deixando um espaço livre */
+    display: none;
+    width: 60%;
+    max-width: 540px;
+    margin: auto;
+    border: 3px solid #efa331;
+    padding: 30px 40px;
+}
+
+.relato-slide p {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.relato-slide h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.relato-slide img {
+    border-radius: 50%;
+}
+
+#prev, #next {
+    /* como o atributo href foi retirado da tag <a>, foi utilizado a propriedade
+    cursor como indicativo de link para o usuario */
+    cursor: pointer; 
+
+    /* ainda não entendo bem como funciona a propriedade position */
+    position: absolute;
+    top: 50%;
+
+    width: auto;
+    margin-top: -30px;
+    /* padding: 16px; */
+    font-weight: 500;
+    font-size: 1.8rem;
+
+    /* impossibilita o usuário de selecionar o texto */
+    user-select: none;
+}
+
+#next {
+    right: 0;
+}
+
+#prev:hover, #next:hover {
+    color: #efa331;
+}
+
+#relatos-slides-indicadores {
+    text-align: center;
+}
+
+.relato-slide-indicador {
+    cursor: pointer;
+    fill: white;
+    padding: 20px 5px;
+}
+
+.active, .relato-slide-indicador:hover {
+    fill: #efa331;
+}
+
+/* ----------------------------------------------------- */
 
 #duvidas {
     display: flex;
