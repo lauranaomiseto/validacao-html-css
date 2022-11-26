@@ -85,7 +85,6 @@ h3 {
 
 #hero {
     height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -280,10 +279,8 @@ section {
     top: 50%;
 
     width: auto;
-    margin-top: -30px;
-    /* padding: 16px; */
-    font-weight: 500;
-    font-size: 1.8rem;
+    font-weight: 600;
+    font-size: 2rem;
 
     /* impossibilita o usuário de selecionar o texto */
     user-select: none;
@@ -307,7 +304,7 @@ section {
     padding: 20px 5px;
 }
 
-.active, .dot:hover {
+.dot:hover {
     fill: #efa331;
 }
 
@@ -317,6 +314,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 #duvidas h2 {
@@ -354,4 +352,14 @@ footer p {
     background-color: #efa331;
     padding: 10px 15px;
     border-radius: 5px;
+}
+
+#wpp {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+#wpp img {
+    width: 50px;
 }
