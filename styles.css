@@ -204,6 +204,7 @@ section {
 
 #porque-cards > div ul {
     list-style: none;
+    padding: 0;
 }
 
 #porque-cards > div li::before {
